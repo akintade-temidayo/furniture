@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0261cb4c11.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#708090] flex justify-center items-center min-h-screen ">
+    
+    <div class="flex md:flex-cols gap-3 bg-[#EEF2FD] rounded-2xl justify-center items-center p-2 md:p-1">
+        <!-- image -->
+        <div class="relative hidden md:flex p-1 md:w-[400px]">
+            <img src="/assests/images/download.avif" alt="" class="h-[600px] w-[400px] rounded-2xl">
+
+            <div class="absolute top-1/2 left-1/2 right-1/2 bottom-1/2 flex justify-center items-center">
+                <div class="text-[#DFE9F4] font-bold text-5xl flex flex-col items-center gap-2 animate-pulse">
+                    WELCOME 
+                    <span class="text-[#EEF2FD] text-[13px] ">
+                        Cheers to picking the right funiture
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- sign up -->
+        <form action="signup" class="text-[#054C73] md:p-3 lg:p-4 md:h-[600px] md:w-[300px] lg:w-[400px]">
+            <i class="fa-solid fa-arrow-left text-medium mb-2 hover:text-[#708090] p-3 hover:text-bold cursor-pointer"></i>
+
+            <div class="mb-4">
+                <h2 class="font-bold md:text-[25px] lg:text-[25px] hidden md:flex">
+                    Create an Account
+                </h2>
+                <h2 class="font-bold text-[30px] lg:hidden md:hidden block">
+                    Sign Up
+                </h2>
+                <p class="font-sm text-[14px]">
+                    Already have an account?
+                    <a href="/login/login.html" class="hover:text-[#708090]"> 
+                        log in
+                    </a>
+                </p>
+            </div>
+
+            <!-- inputs 1 & 2 -->
+            <div class="grid md:grid-cols-2 gap-1 mb-2">
+                <label for="input 1" class="text-[12px]">First Name</label>
+                <label for="input 2" class="text-[12px] hidden md:flex">Last Name</label>
+                <input type="text" placeholder="first name" class="bg-[#EEF2FD] backdrop-blur-md p-2 border-[1.5px] border-[#054C73] rounded-3xl
+                    focus:outline hover:border-[#708090">
+                <label for="input 2" class="text-[12px] lg:hidden md:hidden block">Last Name</label>
+                <input type="email" placeholder="last name" class="bg-[#EEF2FD] backdrop-blur-md p-2 border-[1.5px] border-[#054C73] rounded-3xl
+                    focus:outline hover:border-[#708090">
+            </div>
+
+            <!-- input 3 -->
+            <div class="flex flex-col mb-2">
+                <label for="input" class="text-[12px]">Email Address</label>
+                <input type="email" placeholder="name@email.com" class="bg-[#EEF2FD] backdrop-blur-md py-2 px-3 border-[1.5px] border-[#054C73] rounded-3xl
+                focus:outline hover:border-[#708090]">
+            </div>
+
+            <!-- input 4 -->
+            <div class="flex flex-col mb-5">
+                <label for="input" class="text-[12px]">Password</label>
+                <input type="password" placeholder="*********" class="bg-[#EEF2FD] backdrop-blur-md p-2 border-[1.5px] border-[#054C73] rounded-3xl
+                focus:outline hover:border-[#708090]">
+            </div>
+
+
+            <button class="w-full bg-[#708090] p-2 text-[#054C73] mb-2 rounded-2xl border
+            hover:bg-[#054C73] hover:text-white hover:font-bold focus:outline hover:border-2 transition-all duration-100">
+                Sign up
+            </button>  
+            <div class="flex gap-1 mb-2">
+                <input type="radio" name="" id="" class="text-[#054C73] cursor-pointer">
+                <label for="radio" class="text-[12px]">
+                    I agree to the
+                    <a href="#" class="underline cursor-pointer hover:text-[10px]">
+                        Terms & Condition
+                    </a>
+                </label>
+            </div>
+
+            <div class="relative flex py-5 items-center mb-5">
+                <div class="flex-grow border-t border-[#708090]"></div>
+                
+                <span class="flex-shrink mx-4 text-[#708090] text-sm">or</span>
+                
+                <div class="flex-grow border-t border-[#708090]"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-2">
+                <button class="flex gap-1 bg-[#EEF2FD] backdrop-blur-md p-2 border-[1.5px] border-[#054C73] rounded-2xl
+                hover:bg-[#708090] hover:text-[#EEF2FD] transition-all">
+                    <i class="fa-brands fa-google"></i>
+                    <p class="text-[12px]">Continue with Google</p>
+                </button>
+                <button class="flex gap-1 bg-[#EEF2FD] backdrop-blur-md p-2 border-[1.5px] border-[#054C73] rounded-2xl
+                hover:bg-[#708090] hover:text-[#EEF2FD] transition-all">
+                    <i class="fa-brands fa-apple"></i>
+                    <p class="text-[12px]">Continue with apple</p>
+                </button>
+            </div>
+
+
+        </form>
+
+
+    </div>
+
+</body>
+</html>
